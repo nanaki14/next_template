@@ -1,3 +1,56 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:tailwind/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "sort-destructure-keys",
+    "unused-imports"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "tailwindcss": {
+      "groupByResponsive": true
+    }
+  },
+  "rules": {
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false
+      }
+    ],
+    "react/prop-types": "off",
+    "import/first": "off",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-dupe-class-members": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "import/order": ["error"],
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "no-new-func": "off",
+    "import/no-named-as-default": "off",
+    "import/no-anonymous-default-export": "off",
+    "import/named": "off"
+  },
+  "globals": {
+    "requestAnimationFrame": true,
+    "localStorage": true
+  }
 }
