@@ -4,11 +4,7 @@
     "plugin:prettier/recommended",
     "plugin:tailwind/recommended"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "sort-destructure-keys",
-    "unused-imports"
-  ],
+  "plugins": ["@typescript-eslint", "sort-destructure-keys", "unused-imports"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
@@ -25,13 +21,6 @@
   },
   "rules": {
     "@typescript-eslint/adjacent-overload-signatures": "error",
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "semi": false
-      }
-    ],
     "react/prop-types": "off",
     "import/first": "off",
     "no-unused-vars": "off",
