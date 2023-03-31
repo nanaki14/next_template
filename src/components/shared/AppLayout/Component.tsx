@@ -1,9 +1,9 @@
-import { VFC } from 'react'
+import { FC } from 'react'
 import { ContainerProps } from './Container'
 
-type Props = {} & ContainerProps
+type Props = ContainerProps & {}
 
-export const Component: VFC<Props> = (props) => {
+export const Component: FC<Props> = (props) => {
   return (
     <div>
       <main>{props.children}</main>

@@ -1,10 +1,10 @@
 import { NextSeo } from 'next-seo'
-import { VFC } from 'react'
+import { FC } from 'react'
 import { ContainerProps } from './Container'
 
-type Props = {} & ContainerProps
+type Props = ContainerProps & {}
 
-export const Component: VFC<Props> = () => {
+export const Component: FC<Props> = () => {
   return (
     <div className="relative">
       <NextSeo title="ホーム" />

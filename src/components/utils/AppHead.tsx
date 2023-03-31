@@ -1,11 +1,11 @@
 import NextHead from 'next/head'
-import { VFC } from 'react'
+import { FC } from 'react'
 import { DefaultSeo } from 'next-seo'
 import { constants } from '@/constants'
 
 type Props = {}
 
-export const AppHead: VFC<Props> = () => {
+export const AppHead: FC<Props> = () => {
   return (
     <>
       <DefaultSeo {...constants.meta} />

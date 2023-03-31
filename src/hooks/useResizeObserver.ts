@@ -3,14 +3,14 @@ import { environments } from '@/environments'
 
 export const useResizeObserver = (
   target: globalThis.Element,
-  func: (params: { width: number; height: number }) => void
+  func: (params: { height: number; width: number }) => void
 ) => {
   useEffect(() => {
     if (environments.isServer || !target) return
 
     const observer = new ResizeObserver((entries) => {
       for (const e of entries) {
-        func({ width: e.contentRect.width, height: e.contentRect.height })
+        func({ height: e.contentRect.height, width: e.contentRect.width })
       }
     })
     observer.observe(target)
@@ -19,5 +19,5 @@ export const useResizeObserver = (
       observer.unobserve(target)
       observer.disconnect()
     }
-  }, [target])
+  }, [target, func])
 }

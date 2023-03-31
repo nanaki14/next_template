@@ -1,26 +1,26 @@
 export const meta = {
-  title: 'site name',
-  titleTemplate: '%s - site name',
   description: 'description',
   openGraph: {
-    title: 'site name',
     description: 'description',
-    type: 'website',
-    locale: 'ja_JP',
-    url: '',
-    site_name: 'site name',
     images: [
       {
+        alt: '',
+        height: 600,
         url: '',
         width: 800,
-        height: 600,
-        alt: '',
       },
     ],
+    locale: 'ja_JP',
+    site_name: 'site name',
+    title: 'site name',
+    type: 'website',
+    url: '',
   },
+  title: 'site name',
+  titleTemplate: '%s - site name',
   twitter: {
+    cardType: '',
     handle: '',
     site: '',
-    cardType: '',
   },
 }

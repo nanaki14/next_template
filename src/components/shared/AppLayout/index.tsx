@@ -1,6 +1,4 @@
-import { VFC } from 'react'
+import { FC } from 'react'
 import { Container, ContainerProps } from './Container'
 
-export const AppLayout: VFC<ContainerProps> = (props) => (
-  <Container {...props} />
-)
+export const AppLayout: FC<ContainerProps> = (props) => <Container {...props} />
